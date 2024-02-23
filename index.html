@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>manish.com</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/c1340fee6c.js" crossorigin="anonymous"></script>
 
@@ -23,18 +23,21 @@
       <div class="left">
         <ul>
           <li> <a href="#Home">Home </a></li>
-          <li> <a href="#About">About </a></li>
-          <li> <a href="#Contact">Projects</a></li>
-          <li> <a href="#sayHello">Say Hello</a></li>
+          <!-- <li> <a href="#About">About </a></li> -->
+          <li> <a href="#section1">Projects</a></li>
+          <li> <a href="#contact">Say Hello</a></li>
           <li> <a href="#Blogs">Blogs</a></li>
           <li> <a href="#toggle"><i class="fa-regular fa-moon toggle"></i></a></li>
+          <li class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </li>
           <!-- <i class="fa-solid fa-moon"></i> -->
         </ul>
       </div>
     </nav>
-    <hr>
   </header>
-  <main>
+
+  <main id="Home">
     <section class="intro">
       <div class="about">
         <div class="name-section">
@@ -42,33 +45,34 @@
             <span>Hi,</span>
             <span>I'm Manish.</span>
           </h1>
-          <h2 class="role">A Fullstack Developer</h2>
+          <h2 class="role">A Fullstack Developer.</h2>
         </div>
         <div class="about-section">
           <p class="about-intro">
-            Passionate about crafting digital experiences that matter and dedicated to <br>crafting seamless digital
-            experiences. With expertise in both front-end <br>
+            Passionate about crafting digital experiences that matters and dedicated to crafting seamless digital
+            experiences. With expertise in both front-end
             and back-end development, I thrive on solving problems and creating elegant solutions.
             Let's collaborate and bring your digital ideas to reality.
           </p>
           <div class="about-icon">
             <div class="icon iconBtn"> <a href="https://github.com/manish-project/CV/projects?query=is%3Aopen"> <img
-                  src="github.svg"></a></div>
-            <div class="icon iconBtn"> <a href=""><img src="instagram.svg"> </a> </div>
-            <div class="icon iconBtn"> <a href=""> <img src="email.svg"> </a></div>
+                  src="assets/github.svg"></a></div>
+            <div class="icon iconBtn"> <a href=""><img src="assets/instagram.svg"> </a> </div>
+            <div class="icon iconBtn"> <a href=""> <img src="assets/email.svg"> </a></div>
             <div> <button class="contactBtn"> Get In Touch</button> </div>
           </div>
 
           <div class="device">
-            <img src="image1.svg" height="480px">
+            <img src="assets/image1.svg" height="480px">
           </div>
         </div>
       </div>
       <div class="main-img">
-        <img src="programmer2.svg" alt="computer-logo">
+        <img src="assets/programmer2.svg" alt="computer-logo">
       </div>
     </section>
   </main>
+  <hr class="breaker">
   <!-- <div class="hero-foot">
     <div class="container">
       <img src="Device.svg" height="440px">
@@ -79,56 +83,121 @@
       <h1 class="">Superpowers</h1>
     </div>
     <div class="skill-image">
-      <img src="Device.svg" alt="" height="300px">
+      <img src="assets/Device.svg" alt="" height="300px">
     </div>
     <div class="language">
-      <div class="language">
-        <div class="lang"> <i class="fa-brands fa-html5"></i>HTML5</div>
-        <div class="lang"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
-        <div class="lang"><i class="fa-brands fa-js"></i>JavaScript</div>
-        <div class="lang"><i class="fa-brands fa-node-js"></i>Node Js</div>
-        <div class="lang">Express Js</div>
-        <div class="lang">Mongo DB</div>
-        <div class="lang"><i class="fa-brands fa-react"></i>React Js</div>
-        <div class="lang">Bootstrap</div>
-        <div class="lang">Tailwind </div>
+      <div class="language scrolling-container ">
+        <div class="skill-kart">
+          <div class=""><img src="assets/html.png" alt="" height="80px"></div>
+          <div class="lang">HTML5</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/css.png" alt="" height="80px"></div>
+          <div class="lang">CSS3</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/js.png" alt="" height="80px"></div>
+          <div class="lang">JavaScript</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/node.png" alt="" height="80px"></div>
+          <div class="lang">Node Js</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/express.png" alt="" height="80px"></div>
+          <div class="lang">Express Js</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/mongo.png" alt="" height="80px"></div>
+          <div class="lang">Mongo DB</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/react.png" alt="" height="80px"></div>
+          <div class="lang">React Js</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/tailwind.png" alt="" height="80px"></div>
+          <div class="lang">Tailwind</div>
+        </div>
+        <div class="skill-kart">
+          <div class=""><img src="assets/bootstrap.png" alt="" height="80px"></div>
+          <div class="lang">Bootstrap</div>
+        </div>
+
+
       </div>
     </div>
     </div>
   </section>
-  <section>
+  <hr class="breaker">
+  <section id="section1">
     <div class="skill">
       <h1 class="">Projects</h1>
     </div>
     <div class="project">
       <div class="weather">
-        <div><img src="weather.png" alt="weather-image" width="400px"></div>
+        <div class="flex center"><img src="assets/weather-removebg-preview.png" alt="weather-image" class="resize">
+        </div>
         <div class="weather-text"> Weather app</div>
         <div class="project-link">
-          <div><a href="#">Live site</a></div>
-          <div><a href="#">Github</a></div>
+          <div><a class="links" href="https://manish-project.github.io/Weather-App/">Live site</a></div>
+          <div><a class="links" href="https://github.com/manish-project/Weather-App">Github</a></div>
         </div>
       </div>
       <div class="weather">
-        <div><img src="weather.png" alt="weather-image" width="400px"></div>
-        <div class="weather-text"> Weather app</div>
+        <div class="flex center">
+          <img src="assets/istockphoto-544462430-612x612-removebg-preview.png" alt="weather-image" class="resize">
+        </div>
+        <div class="weather-text">Calculator</div>
         <div class="project-link">
-          <div><a href="#">Live site</a></div>
-          <div><a href="#">Github</a></div>
+          <div><a class="links" href="https://manish-project.github.io/Calculator/">Live site</a></div>
+          <div><a class="links" href="https://github.com/manish-project/Calculator">Github</a></div>
         </div>
       </div>
       <div class="weather">
-        <div><img src="weather.png" alt="weather-image" width="400px"></div>
-        <div class="weather-text"> Weather app</div>
+        <div class="flex center"><img src="assets/unnamed.png" alt="weather-image" class="resize"></div>
+        <div class="weather-text">TextConverter</div>
         <div class="project-link">
-          <div><a href="#">Live site</a></div>
-          <div><a href="#">Github</a></div>
+          <div><a class="links" href="https://manish-project.github.io/TextConverter/">Live site</a></div>
+          <div><a class="links" href="https://github.com/manish-project/TextConverter">Github</a></div>
         </div>
       </div>
 
     </div>
+
   </section>
+  <hr class="breaker">
+  <div class="skill">
+    <h1 class="">Contact us</h1>
+  </div>
+  <section id="contact">
+
+
+    <div class="container">
+      <div class="contact-info">
+        <img src="assets/computer-link-svgrepo-com.svg" alt="Contact Icon" width="800px">
+      </div>
+      <form id="contact-form">
+        <h1>Let's talk</h1>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <hr class="breaker">
   <footer>
+    <span>Copyright</span>
     <span>©</span>
     <span><a href="#Home" class="f1">Manish.com</a></span>
     <span>2024</span>
