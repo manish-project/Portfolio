@@ -11,13 +11,23 @@
 // c= c+5;
 // console.log(c);
 
-function outer() {
-  let outerVeriable = 5;
-  function inner() {
-    console.log(outerVeriable + 5);
-  }
-  return inner;
-}
+// function outer() {
+//   let outerVeriable = 5;
+//   function inner() {
+//     console.log(outerVeriable + 5);
+//   }
+//   return inner;
+// }
 
-let innerCall = outer();
-innerCall();
+// let innerCall = outer();
+// innerCall();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.toggle-button');
+  const navbarLinks = document.querySelector('.navbar-links');
+
+  toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active');
+  });
+});

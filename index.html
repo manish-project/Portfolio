@@ -12,7 +12,7 @@
 </head>
 
 <body class="center">
-  <header>
+  <header id="Header">
     <nav class="shadow">
       <div class="right logo">
         <span class=" logo1">
@@ -20,7 +20,13 @@
             <span class="">Manish</span>
             <span class="logo2">/></span>
       </div>
-      <div class="left">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <div class="left navbar-links">
         <ul>
           <li> <a href="#Home">Home </a></li>
           <!-- <li> <a href="#About">About </a></li> -->
@@ -80,13 +86,14 @@
   </div> -->
   <section class="skill-section">
     <div class="skill">
-      <h1 class="">Superpowers</h1>
+      <h1 class=""> My Superpowers</h1>
     </div>
     <div class="skill-image">
-      <img src="assets/Device.svg" alt="" height="300px">
+      <img src="assets/Device.svg" alt="superpower-image">
     </div>
     <div class="language">
       <div class="language scrolling-container ">
+
         <div class="skill-kart">
           <div class=""><img src="assets/html.png" alt="" height="80px"></div>
           <div class="lang">HTML5</div>
@@ -103,6 +110,10 @@
           <div class=""><img src="assets/node.png" alt="" height="80px"></div>
           <div class="lang">Node Js</div>
         </div>
+
+
+
+
         <div class="skill-kart">
           <div class=""><img src="assets/express.png" alt="" height="80px"></div>
           <div class="lang">Express Js</div>
@@ -123,9 +134,10 @@
           <div class=""><img src="assets/bootstrap.png" alt="" height="80px"></div>
           <div class="lang">Bootstrap</div>
         </div>
-
-
       </div>
+
+
+
     </div>
     </div>
   </section>
@@ -167,18 +179,21 @@
 
   </section>
   <hr class="breaker">
-  <div class="skill">
-    <h1 class="">Contact us</h1>
-  </div>
-  <section id="contact">
 
+  <section id="contact">
+    <div class="skill">
+      <h1 class="">Contact us</h1>
+    </div>
 
     <div class="container">
       <div class="contact-info">
-        <img src="assets/computer-link-svgrepo-com.svg" alt="Contact Icon" width="800px">
+        <h1>Our info</h1>
+        <h3>maniskumarr@gmail.com</h3>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, pariatur.</h3>
       </div>
       <form id="contact-form">
-        <h1>Let's talk</h1>
+        <div> <img src="assets/computer-link-svgrepo-com.svg" width="80px" alt="">
+        </div>
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" required>
