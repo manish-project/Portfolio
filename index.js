@@ -22,12 +22,29 @@
 // let innerCall = outer();
 // innerCall();
 
+// document.addEventListener("DOMContentLoaded", () => {
+//   const toggleButton = document.querySelector(".toggle-button");
+//   const navbarLinks = document.querySelector(".navbar-links");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleButton = document.querySelector('.toggle-button');
-  const navbarLinks = document.querySelector('.navbar-links');
+//   toggleButton.addEventListener("click", () => {
+//     navbarLinks.classList.toggle("active");
+//   });
+// });
 
-  toggleButton.addEventListener('click', () => {
-      navbarLinks.classList.toggle('active');
+// document.addEventListener("DOMContentLoaded", () => {
+//   const toggleButton = document.querySelector(".toggle-button");
+//   const navbarLinks = document.querySelector(".navbar-links");
+
+//   toggleButton.addEventListener("click", () => {
+//     navbarLinks.classList.toggle("hidden");
+//   });
+// });
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.querySelector(".toggle-button");
+  const navbarLinks = document.querySelector(".navbar-links");
+
+  toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("show");
   });
 });
+

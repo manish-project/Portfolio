@@ -45,7 +45,7 @@ nav {
 .toggle-button {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 30px;
   height: 21px;
 }
@@ -59,10 +59,10 @@ nav {
 
 @media (max-width: 768px) {
   .navbar-links {
+    width: auto; /* Remove width: 100% */
     display: none;
-    width: 100%;
+    overflow-y: auto; /* Add overflow-y */
   }
-
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
@@ -77,10 +77,32 @@ nav {
   .toggle-button {
     display: flex;
   }
+  .navbar-links.show {
+    /* New class for shown menu */
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%; /* Full width on small screens */
+    position: absolute; /* Position absolutely for layering */
+    top: 100%; /* Initially positioned below the navbar */
+    left: 0; /* Aligned to the left */
+    background-color: #fff; /* Optional background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .hidden {
+    position: absolute; /* Absolute positioning for pop-out */
+    top: 100%; /* Positioned below the navbar initially */
+    left: 0; /* Aligned to the left */
+    width: 100vw; /* Full viewport width */
+    background-color: #fff; /* Optional background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
 }
 
 .navbar-links.active {
-  display: flex;
+  top: 0; /* Move to the top on activation */
 }
 
 nav .right {
@@ -111,9 +133,6 @@ ul li {
 
 li a {
   text-decoration: none;
-}
-.menu-toggle {
-  display: none;
 }
 
 .sayHello {
@@ -185,14 +204,14 @@ section .about {
   justify-content: center;
 }
 .contactBtn {
-  margin: 0.5rem;
-  height: 2.5rem;
   width: 10rem;
-  background-color: #e94560;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
 }
+
 .contactBtn:hover {
   background-color: rgb(236, 234, 234);
   color: #e94560;
@@ -274,6 +293,7 @@ section .about {
   padding: 10px 20px;
   margin-right: 20px;
   white-space: nowrap;
+  margin-top: 15px;
   /* animation: scroll 7s linear infinite; */
 }
 
@@ -293,6 +313,7 @@ section .about {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .weather {
   border: 1px solid rgb(31, 233, 233);
   width: 21vw;
@@ -366,10 +387,10 @@ section .about {
   margin-right: 40px;
 }
 
-.contact-info img {
+/* .contact-info img {
   width: 100px;
   height: auto;
-}
+} */
 
 #contact-form {
   width: 100%;
@@ -484,14 +505,41 @@ button[type="submit"]:hover {
   .skill-image img {
     height: 200px;
   }
+  .contact-info {
+    width: 50%;
+    margin: auto;
+    line-height: 2;
+    padding-bottom: 2rem;
+  }
   .container {
     padding: 0%;
     display: flex;
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 515px) {
+  .skill-image img {
+    height: 120px;
+  }
+}
+
 @media screen and (max-width: 870px) {
   #contact-form {
     width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    display: block;
+  }
+  .weather {
+    border: 1px solid rgb(31, 233, 233);
+    width: 60vw;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    margin-top: 1rem;
   }
 }
